@@ -10,6 +10,19 @@ public class PostEffectsBase : MonoBehaviour {
 
     public Shader shader;
     private Material curMaterial;
+    private Camera curCamera;
+
+    public Camera camera
+    {
+        get
+        {
+            if (curCamera == null)
+            {
+                curCamera = transform.GetComponent<Camera>();
+            }
+            return curCamera;
+        }
+    }
 
     public Material material
     {
