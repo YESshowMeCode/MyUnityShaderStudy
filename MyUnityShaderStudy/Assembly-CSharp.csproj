@@ -67,9 +67,11 @@
     <Compile Include="Assets\shader\GuassianBlur\GuassianBlurEffect1.cs" />
     <Compile Include="Assets\shader\MotionBlur\MotionBlurEffect.cs" />
     <Compile Include="Assets\shader\MotionBlur\MotionBlurEffectByDepth.cs" />
+    <Compile Include="Assets\shader\RadialBlur\RadialBlurEffect.cs" />
     <None Include="Assets\shader\GuassianBlur\GuassianBlurShader.shader" />
     <None Include="Assets\shader\MotionBlur\MotionBlurByDepthShader.shader" />
     <None Include="Assets\shader\MotionBlur\MotionBlurShader.shader" />
+    <None Include="Assets\shader\RadialBlur\RadialBlurShader.shader" />
     <None Include="Assets\shader\GuassianBlur\GuassianBlurShader1.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Github/MyUnityShaderStudy/MyUnityShaderStudy/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
