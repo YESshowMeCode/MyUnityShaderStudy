@@ -29,36 +29,37 @@
 			};
 			sampler2D _MainTex;
 			float BlurSpread;
-			float3 AnyOneTrans;
-
+			float4 BlurCenter;
+			float4 _MainTex_TexelSize;
 			v2f vert (appdata v)
 			{
 				v2f o;
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = v.uv;
+
+				#if UNITY_UV_STARTS_AT_TOP
+					if (_MainTex_TexelSize.y < 0)
+						o.uv.y = 1 - o.uv.y;
+				#endif
+
 				return o;
 			}
 			
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				float4 worldpos = float4(AnyOneTrans.xyz,1);
-				float4 screenPos = UnityObjectToClipPos(worldpos);
-				float4 screenpos1 = mul(unity_CameraProjection,screenPos);
 
-				float2 tmp = screenpos1.xy/screenpos1.w;
-				float2 screenUV = (tmp.xy+1)/2;
 
-				float2 dist = i.uv - screenUV;
+				float2 dir = i.uv - BlurCenter.xy;
+				float4 finalColor = 0;
 
-				float k = dist.x/dist.y;
+				for(int j = 0 ; j < 5 ; ++j )
+				{
+					float2 uv = i.uv - dir * BlurSpread * j;				
+					finalColor += tex2D(_MainTex,uv);
+				}
 
-				float2 pos = float2(screenUV.x+BlurSpread*k,screenUV.y+BlurSpread );
-				
-				float4 col = tex2D(_MainTex, i.uv);
-				float4 blurColor = tex2D(_MainTex, pos);
-
-				float4 finalColor = (col + blurColor)/2;
+				finalColor = finalColor/5;
 				return finalColor;
 			}
 			ENDCG
