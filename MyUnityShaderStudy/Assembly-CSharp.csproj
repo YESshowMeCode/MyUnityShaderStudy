@@ -61,30 +61,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PostEffectShader\Bloom\BloomEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\DepthOfField\DepthOfFieldEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\DepthOfField\DOFEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\Dithering\DitherEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\EdgeDetection\EdgeDetectionEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\Grain\GrainEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\GuassianBlur\GuassianBlurEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\GuassianBlur\GuassianBlurEffect1.cs" />
+    <Compile Include="Assets\PostEffectShader\MotionBlur\MotionBlurEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\MotionBlur\MotionBlurEffectByDepth.cs" />
+    <Compile Include="Assets\PostEffectShader\RadialBlur\RadialBlurEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\Twirl\TwirlEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\WaterEffect\WaterEffect.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\PostEffectsBase.cs" />
-    <Compile Include="Assets\shader\Bloom\BloomEffect.cs" />
-    <Compile Include="Assets\shader\DepthOfField\DepthOfFieldEffect.cs" />
-    <Compile Include="Assets\shader\DepthOfField\DOFEffect.cs" />
-    <Compile Include="Assets\shader\Dithering\DitherEffect.cs" />
-    <Compile Include="Assets\shader\Grain\GrainEffect.cs" />
-    <Compile Include="Assets\shader\GuassianBlur\GuassianBlurEffect.cs" />
-    <Compile Include="Assets\shader\GuassianBlur\GuassianBlurEffect1.cs" />
-    <Compile Include="Assets\shader\MotionBlur\MotionBlurEffect.cs" />
-    <Compile Include="Assets\shader\MotionBlur\MotionBlurEffectByDepth.cs" />
-    <Compile Include="Assets\shader\RadialBlur\RadialBlurEffect.cs" />
-    <Compile Include="Assets\shader\Twirl\TwirlEffect.cs" />
-    <None Include="Assets\shader\Dithering\DitherShader.shader" />
-    <None Include="Assets\shader\DepthOfField\DOFShader.shader" />
-    <None Include="Assets\shader\Grain\GrainShader.shader" />
-    <None Include="Assets\shader\GuassianBlur\GuassianBlurShader.shader" />
-    <None Include="Assets\shader\DepthOfField\DepthOfFieldShader.shader" />
-    <None Include="Assets\shader\MotionBlur\MotionBlurByDepthShader.shader" />
-    <None Include="Assets\shader\Twirl\TwirlShader.shader" />
-    <None Include="Assets\shader\MotionBlur\MotionBlurShader.shader" />
-    <None Include="Assets\shader\RadialBlur\RadialBlurShader.shader" />
-    <None Include="Assets\shader\GuassianBlur\GuassianBlurShader1.shader" />
-    <None Include="Assets\shader\Bloom\BloomShader.shader" />
+    <None Include="Assets\PostEffectShader\Dithering\DitherShader.shader" />
+    <None Include="Assets\PostEffectShader\DepthOfField\DOFShader.shader" />
+    <None Include="Assets\PostEffectShader\Grain\GrainShader.shader" />
+    <None Include="Assets\PostEffectShader\GuassianBlur\GuassianBlurShader.shader" />
+    <None Include="Assets\PostEffectShader\DepthOfField\DepthOfFieldShader.shader" />
+    <None Include="Assets\PostEffectShader\MotionBlur\MotionBlurByDepthShader.shader" />
+    <None Include="Assets\PostEffectShader\EdgeDetection\EdgeDetectionShader.shader" />
+    <None Include="Assets\PostEffectShader\WaterEffect\WaterShader.shader" />
+    <None Include="Assets\PostEffectShader\OutLine\OutLineShader.shader" />
+    <None Include="Assets\PostEffectShader\Twirl\TwirlShader.shader" />
+    <None Include="Assets\PostEffectShader\MotionBlur\MotionBlurShader.shader" />
+    <None Include="Assets\PostEffectShader\RadialBlur\RadialBlurShader.shader" />
+    <None Include="Assets\PostEffectShader\GuassianBlur\GuassianBlurShader1.shader" />
+    <None Include="Assets\PostEffectShader\Bloom\BloomShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Github/MyUnityShaderStudy/MyUnityShaderStudy/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

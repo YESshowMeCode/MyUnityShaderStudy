@@ -306,6 +306,8 @@ GameObject:
   - component: {fileID: 854155708}
   - component: {fileID: 854155709}
   - component: {fileID: 854155710}
+  - component: {fileID: 854155711}
+  - component: {fileID: 854155712}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -349,7 +351,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 3
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -510,17 +512,49 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854155697}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88d178244a61ae42b77acca7d7f8d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 06abfe9c542528c4298cd96dfd8556e6, type: 3}
-  sampleDown: 2
-  iterator: 2
-  blurSpread: 0.009
+  sampleDown: 1
+  iterator: 1
+  blurSpread: 0.551
   bloomFactor: 1
   bloomColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &854155711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854155697}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c27203746fef74596db6050471e2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: ea826965dccdebe4f998d57467dfd4ea, type: 3}
+  edgeFactor: 0.009
+  edgeColor: {r: 0, g: 0, b: 0, a: 1}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &854155712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854155697}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6f8871d5295a74f8bcacd0dd9773ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: f0fdb965e42b2424a95b467cb547cfc1, type: 3}
+  waveWidth: 0.297
+  speed: 0.31
+  distanceFactor: 60
+  timeFactor: -30
+  sinFactor: 0.972
 --- !u!1 &1395233456
 GameObject:
   m_ObjectHideFlags: 0
