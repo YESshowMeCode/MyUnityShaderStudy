@@ -72,6 +72,7 @@
     <Compile Include="Assets\PostEffectShader\MotionBlur\MotionBlurEffect.cs" />
     <Compile Include="Assets\PostEffectShader\MotionBlur\MotionBlurEffectByDepth.cs" />
     <Compile Include="Assets\PostEffectShader\RadialBlur\RadialBlurEffect.cs" />
+    <Compile Include="Assets\PostEffectShader\RainEffect\RainEffect.cs" />
     <Compile Include="Assets\PostEffectShader\Twirl\TwirlEffect.cs" />
     <Compile Include="Assets\PostEffectShader\WaterEffect\WaterEffect.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
@@ -85,7 +86,10 @@
     <None Include="Assets\PostEffectShader\EdgeDetection\EdgeDetectionShader.shader" />
     <None Include="Assets\PostEffectShader\WaterEffect\WaterShader.shader" />
     <None Include="Assets\PostEffectShader\OutLine\OutLineShader.shader" />
+    <None Include="Assets\ShaderTest\RimLight\RimLightShader.shader" />
+    <None Include="Assets\PostEffectShader\RainEffect\RainEffectShader.shader" />
     <None Include="Assets\PostEffectShader\Twirl\TwirlShader.shader" />
+    <None Include="Assets\ShaderTest\Light\BlinnPhongShader.shader" />
     <None Include="Assets\PostEffectShader\MotionBlur\MotionBlurShader.shader" />
     <None Include="Assets\PostEffectShader\RadialBlur\RadialBlurShader.shader" />
     <None Include="Assets\PostEffectShader\GuassianBlur\GuassianBlurShader1.shader" />
